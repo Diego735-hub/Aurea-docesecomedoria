@@ -1,0 +1,153 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte e fundo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #4b007d;
+    color: #333;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    ;
+}
+
+header h1 {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    color: #ffd700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    color: #fff;
+}
+
+/* Título da seção */
+main h2 {
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Layout dos produtos */
+.cardapio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Cada item */
+.item {
+    background-color: #7d1ebd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagem */
+.item img {
+    width: 100%;           /* imagem ocupa largura total do card */
+    max-width: 180px;      /* limite máximo para desktop */
+    height: auto;
+    object-fit: contain;   /* mantém proporção e não corta a imagem */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Título e descrição */
+.item h3 {
+    font-size: 1.2rem;
+    color: #ffd700;
+    margin-bottom: 5px;
+}
+
+.item p {
+    font-size: 0.95rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Preço */
+.item span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffd700;
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* Botão de pedido */
+button {
+    background-color: #ffd700;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4b007d;
+    color: #ffd700;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .cardapio {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .item img {
+        max-width: 150px;
+    }
+
+    header h1 {
+        font-size: clamp(1.8rem, 6vw, 2.2rem);
+    }
+
+    header p {
+        font-size: clamp(0.8rem, 3vw, 0.95rem);
+    }
+
+    main h2 {
+        font-size: clamp(1.3rem, 4.5vw, 1.6rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .cardapio {
+        grid-template-columns: 1fr; /* 1 card por linha em celular */
+    }
+
+    .item img {
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}

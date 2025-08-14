@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --roxo: #4b007d;
+    --roxo-claro: #7d1ebd;
+    --amarelo: #ffd700;
+    --branco: #ffffff;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url('fundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--branco);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Header */
+.logo h1{
+    font-family: 'Pacifico', cursive;
+    color: var(--amarelo);
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    position: fixed; /* fica fixo no topo */
+    top: 0;
+    left: 0;
+}
+
+nav button {
+    background: var(--amarelo);
+    color: var(--roxo);
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav button:hover {
+    background: var(--branco);
+    color: var(--roxo);
+}
+
+/* Imagem de fundo */
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Main */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    margin-top: 100px; /* espaço para header fixo */
+    min-height: calc(100vh - 100px); /* garante que o rodapé fique no final */
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    color: var(--amarelo);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    margin-bottom: 40px; /* espaço entre banner e cardápio */
+}
+
+.banner h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+/* Container exclusivo para imagens do cardápio */
+.cardapio-imgs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 300px;
+    margin-bottom: 60px; /* distância do rodapé */
+    flex-wrap: wrap;
+}
+
+.cardapio-imgs .bolo {
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cardapio-imgs .bolo img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cardapio-imgs .bolo h3 {
+    margin-top: 10px;
+    color: var(--amarelo);
+    text-align: center;
+}
+
+.cardapio-imgs .bolo:hover {
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav button {
+        margin: 5px;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .cardapio-imgs .bolo,
+    .mini-cardapio .bolo {
+        width: 100%;
+        max-width: 300px;
+    }
+}

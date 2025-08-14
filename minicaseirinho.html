@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caseirinho</title>
+    <link rel="stylesheet" href="/estilos/caseirinho.css">
+    <link rel="stylesheet" href="/estilos/carrinho.css">
+
+</head>
+<body>
+    <header>
+        <h1>✨ Sabor em Cada Mordida ✨</h1>
+        <p>Nada como o carinho de um bolo caseiro para adoçar o dia. Nosso “Mine Caseirinho” é feito com ingredientes frescos e aquele toque especial de receita de família, garantindo sabor, maciez e um cheirinho irresistível que lembra a casa da vovó.
+
+</p>
+ <!-- Ícone do carrinho -->
+
+   <button id="carrinho-botao" class="carrinho-btn">
+   🛍️ <span id="carrinho-qtd">0</span>
+</button>
+
+</div>
+    </header>
+
+   <main>
+     <h2> cardapio - Caseirinho</h2>
+     <section class="cardapio">
+        <div class="item"><!--pedido 1-->
+            <img src="/img/images.jpeg" alt=" Chocolate Cremoso">
+            <h3> Chocolate Cremoso</h3>
+            <p>Um clássico que nunca sai de moda! Massa fofinha e sabor intenso de cacau, perfeito para acompanhar aquele cafezinho da tarde.</p>
+            <span>R$ 8,00</span>
+            <button onclick="adicionarAoCarrinho('Chocolate Cremoso', 8.00)">
+    Adicionar ao Carrinho
+</button>
+
+        </div>
+        <div class="item">
+            <img src="/img/hqdefault.jpg" alt="Fubá com Erva-Doce">
+            <h3>Fubá com Erva-Doce</h3>
+            <p>O sabor da roça na sua mesa. Leve, aromático e com o toque especial da erva-doce que aquece o coração.</p>
+            <span>R$ 7,50</span>
+           <button onclick="adicionarAoCarrinho('Fubá com Evar-Doce', 7.50)">
+    Adicionar ao Carrinho
+</button>
+
+        </div>
+        <div class="item">
+            <img src="/img/cenoura- Image 13 de ago. de 2025, 08_04_58.png" alt="Cenoura com Cobertura de Chocolate">
+            <h3>Cenoura com Cobertura de Chocolate</h3>
+            <p>Fofo, úmido e com cobertura de chocolate cremosa que derrete na boca — impossível comer só um pedaço.</p>
+            <span>R$ 8,50</span>
+            <button onclick="adicionarAoCarrinho('Cenoura com cobertura de chocolate', 8.50)">
+    Adicionar ao Carrinho
+</button>
+
+        </div>
+        <div class="item">
+            <img src="/img/images (1).jpeg" alt="Laranja Fresquinha">
+            <h3>Laranja Fresquinha</h3>
+            <p>Feito com suco natural, tem um aroma irresistível e um sabor cítrico suave que combina com qualquer momento do dia.</p>
+            <span>R$ 7,50</span>
+           <button onclick="adicionarAoCarrinho('Laranja Fresquinha', 7.50)">
+    Adicionar ao Carrinho
+</button>
+
+        </div>
+        <div class="item">
+            <img src="/img/b619d526b63dd6f4a912acb07ec7.jpg" alt="Milho Verde">
+            <h3>Milho Verde</h3>
+            <p>Sabor autêntico e textura macia, trazendo o gostinho das festas juninas durante o ano todo.</p>
+            <span>R$ 8,00</span>
+            <button onclick="adicionarAoCarrinho('Milho Verde', 8.00)">
+    Adicionar ao Carrinho
+</button>
+
+        </div>
+        <div class="item">
+            <img src="/img/bolo de coco Image 13 de ago. de 2025, 08_49_32.png" alt="Coco com Leite Condensado">
+            <h3>Coco com Leite Condensado</h3>
+            <p>Doce na medida certa, com coco fresco e uma caldinha cremosa que deixa cada fatia ainda mais especial.</p>
+            <span>R$ 8,50</span>
+            <button onclick="adicionarAoCarrinho('Cococom Leite Condensado', 8.50)">
+    Adicionar ao Carrinho
+</button>
+
+        </div>
+        <div class="item">
+            <img src="/img/maracuja Image 13 de ago. de 2025, 08_58_15.png" alt="Maracujá com Gotas de Chocolate">
+            <h3>Maracujá com Gotas de Chocolate</h3>
+            <p>A combinação perfeita do azedinho do maracujá com o doce suave do chocolate — refrescante e irresistível.</p>
+            <span>R$ 9,00</span>
+            <button onclick="adicionarAoCarrinho('Maracujá com Gotas de Chocolate', 9.00)">
+    Adicionar ao Carrinho
+</button>
+
+        </div>
+        <div class="item">
+            <img src="/img/bolo-rapido-de-banana-11078.jpg" alt="Banana com Canela">
+            <h3>Banana com Canela</h3>
+            <p>Aconchegante e aromático, com pedacinhos de banana e o toque quentinho da canela.</p>
+            <span>R$ 8,00</span>
+            <button onclick="adicionarAoCarrinho('Banana com Canela', 8.00)">
+    Adicionar ao Carrinho
+</button>
+
+        </div>
+        <div class="item">
+            <img src="/img/bolo-de-ninho-com-nutella-730x856.jpg" alt="Ninho com Nutella">
+            <h3>Ninho com Nutella</h3>
+            <p>Sabor delicado do leite em pó combinado com a cremosidade marcante da Nutella — uma tentação para os amantes de doce.</p>
+            <span>R$ 10,00</span>
+            <button onclick="adicionarAoCarrinho('Ninho com Nutella', 10.00)">
+    Adicionar ao Carrinho
+</button>
+
+        </div>
+        <div class="item">
+            <img src="/img/Receita-de-bolo-de-limao-de-liquidificador-1024x769.jpg" alt="Limão com Glaçagem Branca">
+            <h3>Limão com Glaçagem Branca</h3>
+            <p>Massa leve e fresquinha, coberta com uma fina camada de glacê que realça o azedinho suave do limão.</p>
+            <span>R$ 8,00</span>
+            <button onclick="adicionarAoCarrinho('Limão com Glaçagem Branca', 8.00)">
+    Adicionar ao Carrinho
+</button>
+
+        </div>
+     </section>
+   </main>
+   
+   <script src="/js/carrinho.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+#carrinho-botao {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ffd700;
+    color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+#carrinho-botao span {
+    background-color: white;
+    color: #ff7b00;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+#carrinho-popup {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    border: 2px solid #ccc;
+    padding: 15px;
+    width: 250px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#carrinho-popup h3 {
+    margin-top: 0;
+}
+
+#carrinho-popup button{
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* mantém os botões à esquerda */
+    gap: 10px; /* espaço entre Cardápio e Caseirinho */
+    position: relative;
+}
+
+#carrinho-qtd {
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    position: absolute;
+    top: -8px;
+    right: -10px;
+}
+
+/* Media query para telas maiores que 650px */
+@media screen and (min-width: 650px) {
+    nav button, nav a button {
+        margin-left: 20px; /* afasta os botões entre si */
+    }
+}
+
+
+
+

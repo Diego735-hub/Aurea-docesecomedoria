@@ -1,0 +1,42 @@
+.mini-cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px; /* Limite máximo para não expandir demais */
+    margin: 50px auto;
+    position: relative;
+    z-index: 5;
+}
+
+.bolo {
+    width: 220px;
+    max-width: 90%; /* Em telas pequenas, diminui */
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding: 10px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        margin-bottom: 40px; /* Dá mais espaço abaixo do banner */
+    }
+
+    .mini-cardapio {
+        margin-top: 20px; /* Garante espaçamento entre texto e bolos */
+        gap: 20px;
+    }
+
+    .bolo {
+        max-width: 80%; /* Ocupa uma linha só */
+    }
+}
+
+.banner {
+    min-height: 200px; /* Mantém espaço fixo para os textos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

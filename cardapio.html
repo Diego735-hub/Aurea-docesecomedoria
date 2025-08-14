@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapio Digital - SABOR DE OURO</title>
+    <link rel="stylesheet" href="/estilos/cardapio.css">
+    <link rel="stylesheet" href="/estilos/carrinho.css">
+</head>
+<body>
+    <header>
+        <h1>SABOR DE OURO</h1>
+        <p>Bolos e Delicias artesanais</p>
+         <!-- Ícone do carrinho -->
+
+   <button id="carrinho-botao" class="carrinho-btn">
+    🛍️ <span id="carrinho-qtd">0</span>
+</button>
+
+</div>
+    </header>
+
+    <main>
+        <h2>Cardápio - Bolos</h2>
+        <section class="cardapio">
+            <!--Produtos 1-->
+            <div class="item">
+                <img src="/img/bolo-de-chocolate-tradicional.png"  alt="Bolo de Chocolate">
+                <h3>Bolo de Chocolate</h3>
+                <p>Tradicional com calda de chocolate.</p>
+                <span>R$ 22,00</span>
+                <button onclick="adicionarAoCarrinho('Bolo de Chocolate', 25.00)">Adicionar</button>
+
+            </div>
+            <!--Produto 2-->
+             <div class="item">
+                <img src="/img/bolo-de-cenoura-com-cobertura-de-chocolate.png" alt="Bolo de cha Cha-tailandes">
+                <h3>Bolo de Cha-tailandes em Chapa Branca</h3>
+                <p>Bolo de Cha-tailandes com copbertura de doce de leite.</p>
+                <span>R$ 25,00</span>
+                <button onclick="adicionarAoCarrinho('Bolo de Chocolate', 25.00)">Adicionar</button>
+
+            </div>
+            <!--Pedido 3-->
+             <div class="item">
+                <img src="/img/bolo-de-morango-tradicional.png"alt="Bolo de morango">
+                <h3>Bolo de Morango</h3>
+                <p>Recheado com chantilly e morangos frescos.</p>
+                <span>R$ 30,00</span>
+                <button onclick="adicionarAoCarrinho('Bolo de Chocolate', 25.00)">Adicionar</button>
+
+            </div>
+
+             <div class="item">
+                <img src="/img/bolo formigueiro.png" alt="bolo formigueiro">
+                <h3>Bolo formigueiro</h3>
+                <p>Sinta a fofura a cada mordida! Nosso Bolo Formigueiro derrete na boca e adoça seu dia.</p>
+                <span>R$ 30</span>
+                <button onclick="adicionarAoCarrinho('Bolo de Chocolate', 25.00)">Adicionar</button>
+
+            </div>
+            
+        </section>
+    </main>
+    <script src="/js/carrinho.js"></script>
+</body>
+</html>
